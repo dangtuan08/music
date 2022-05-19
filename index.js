@@ -215,7 +215,7 @@ const app = {
       animateThumb.play();
     });
 
-    volume.onchange = function () {
+    volume.oninput = function () {
       console.log(volume.value);
       audio.volume = volume.value;
       let html;
